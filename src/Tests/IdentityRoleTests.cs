@@ -45,7 +45,7 @@
 
 			var parsed = role.Id.SafeParseObjectId();
 			Expect(parsed, Is.Not.Null);
-			Expect(parsed, Is.Not.EqualTo(ObjectId.Empty));
+			Expect(parsed, Is.Not.EqualTo("notadmin"));
 		}
 	}
 }
